@@ -8,7 +8,7 @@ All the non-hardcoded stuff should go there.
 #CCDFileName = '/Volumes/Zack/Desktop/20160628 - TitanX - Righter Ti-TiO2 spinel FIB 1/ALCHEMI 2/CCD/Stack.emd'
 #MosaicBinning = 5
 
-EDSFileName = '/Volumes/Desktop/20170412 - TitanX - GRA 95229 - Chondrule 1 - Altered chromite/ALCHEMI 5 - Altered region/EDS/Stack.emd'
+EDSFileName = '/Volumes/Desktop/Unprocessed/20150623 - TitanX - Cecil A6, S3 ALCHEMI/Take 2/StackEDS.emd'
 def DefineSections(Spectrum):
     Sections = []
     #Sections.append(CreateEDSFitSection(SpectrumIn=Spectrum, SectionName='Cr-Fe', SectionRange=[5000,7800], PeakNames=['CrKa', 'CrKb', 'FeKa', 'FeKb'], BkgName='Bkg'))

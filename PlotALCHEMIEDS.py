@@ -98,6 +98,7 @@ def PlotMeanAndStdOfStack(E, EDSStack, OutputPath):
     TempStack = np.reshape(EDSStack, (s[0] * s[1], s[2]))
     # Mean spectrum
     SMean = np.mean(TempStack, axis=0)
+    SSum = np.sum(TempStack, axis=0)
     SStd = np.std(TempStack, axis=0)
     # Make a plot showing the range of spectrum intensities, 2 sigma
     (fig, ax) = plt.subplots()
@@ -106,6 +107,8 @@ def PlotMeanAndStdOfStack(E, EDSStack, OutputPath):
     QuickPlot.QuickPlot(E, SMean, xlim=[0, 10000], xlabel='eV', ylabel='Counts',
                         title='Full Spectrum View, 2$\sigma$ variation', figax=(fig, ax))
     plt.savefig(os.path.join(OutputPath, 'StackMeanAndStd.png'))
+    np.savetxt(os.path.join(OutputPath, 'StackMean.txt'), np.vstack((E, SMean)).T)
+    np.savetxt(os.path.join(OutputPath, 'StackSum.txt'), np.vstack((E, SMean)).T)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,56 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# PyCharm
+.idea/*
+.idea/
+
+# Stoichiometry Fitter temp files.
+Temp/*
+Temp/
+
+# No brine in the GitHub
+*.pickle
+*.pkl
+*.py~
+*.wxg~
+
+# Don't include data files
+*.hdf5
+
+# Don't include Qt Creator build files
+build-*
